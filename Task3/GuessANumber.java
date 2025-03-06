@@ -28,14 +28,13 @@ public class GuessANumber {
     if (!scan.hasNextDouble()) {
       System.err.println("Input was not a numeric");
       makeAGuess();
-      return;
     }
 
     double num = scan.nextDouble();
 
     if (num == rnd_number) {
       System.out.println("Correct!");
-      return;
+      System.exit(0);
     }
 
     System.out.println("WRONG! Try again...");
